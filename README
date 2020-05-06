@@ -1,1 +1,15 @@
-Started as I'm preparing for a job interview.
+Started this project as I'm preparing for a job interview.
+
+Version 1.0 (probably will be the only version lol) functionalities:
+
+ Scrape 
+ 	- date
+	- location
+	- title
+	- interview questions
+ from a company's landing page
+
+It's designed only for a quick hand to get the interview questions, but please feel free to add more functionalities into it. :)
+
+***NO COMMERCIAL USE***
+

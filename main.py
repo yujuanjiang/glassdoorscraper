@@ -3,6 +3,7 @@ Cecilia Jiang
 May the 4th be with you, 2020
 
 Given a company's URL and output a csv with the technical interview questions
+How to run command: python3 main.py -u 'https://www.glassdoor.ca/Interview/Shopify-Interview-Questions-E675933.htm'
 
 Review date
 Interview questions
@@ -52,12 +53,12 @@ def getPages(url, head):
             if url not in pages:
                 pages.add(url)
 
-#    for lastPage in nextPage.findAll('li',{'class':'page last'}):
-#        lastPage = 'http://glassdoor.ca{}'.format(lastPage.a['href'])
-#        getPages(lastPage, head)
+    for lastPage in nextPage.findAll('li',{'class':'page last'}):
+        lastPage = 'http://glassdoor.ca{}'.format(lastPage.a['href'])
+        getPages(lastPage, head)
 
 #    print(pages)
-#    print("function getPages() finished...")
+    print("function getPages() finished...")
     return pages
         
 
